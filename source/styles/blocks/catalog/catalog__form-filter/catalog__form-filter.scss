@@ -1,0 +1,19 @@
+.catalog__form-filter {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    display: grid;
+    grid-template-columns: 243px 243px 242px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    grid-column: 1/2;
+    grid-template-rows: repeat(4, min-content);
+    margin: 0;
+  }
+}

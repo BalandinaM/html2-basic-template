@@ -1,0 +1,20 @@
+.catalog__sorting {
+  width: 280px;
+  margin: 0 auto 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 8px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+  }
+}

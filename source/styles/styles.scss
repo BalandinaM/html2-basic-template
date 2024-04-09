@@ -2,6 +2,42 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/mixins";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/header/header__wrap-logo.scss";
+@import "./blocks/header/header__nav.scss";
+@import "./blocks/header/header__user-nav.scss";
+@import "./blocks/slider/slider/slider.scss";
+@import "./blocks/slider/slider/description.scss";
+@import "./blocks/slider/swiper.scss";
+@import "./blocks/advantages/advantages.scss";
+@import "./blocks/advantages/item.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/catalog__form-filter/catalog__form-filter.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter__checkbox/form-filter__checkbox.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter__checkbox/checkbox.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter__radio-button/form-filter__radio-button.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter__radio-button/radio-button.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter__range-price/form-filter__range-price.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter__range-price/price-controls.scss";
+@import "./blocks/catalog/catalog__form-filter/form-filter/form-filter__range-price/range-controls.scss";
+@import "./blocks/catalog/catalog__products/catalog__products.scss";
+@import "./blocks/catalog/catalog__products/products/products.scss";
+@import "./blocks/catalog/catalog__products/products/pagonation.scss";
+@import "./blocks/catalog/catalog__sorting/catalog__sorting.scss";
+@import "./blocks/catalog/catalog__sorting/sorting.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/map-container.scss";
+@import "./blocks/footer/footer__contacts.scss";
+@import "./blocks/footer/footer__copyright.scss";
+@import "./blocks/footer/footer__market.scss";
+@import "./blocks/footer/footer__media.scss";
+@import "./blocks/footer/footer__social.scss";
+
+
+
+
+

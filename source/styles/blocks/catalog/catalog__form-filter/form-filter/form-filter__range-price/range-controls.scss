@@ -1,0 +1,80 @@
+.range-controls__scale {
+  width: 280px;
+  height: 2px;
+  background-color: $grey-light;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
+}
+
+.range-controls__bar {
+  width: 241.26px;
+  height: 4px;
+  background-color: $primary-light;
+
+  position: absolute;
+  top: -1px;
+
+  @media (min-width: $tablet-width) {
+    width: 192px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 274px;
+  }
+}
+
+.range-controls__toggle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: solid 2px $primary-light;
+  background-color: $white;
+
+  position: absolute;
+
+  &::after {
+    display: none;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $primary-opacity;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    display: block;
+  }
+
+  &:active::after {
+    background-color: $primary;
+  }
+
+  &--min {
+    top: -11px;
+  }
+
+  &--max {
+    top: -11px;
+    left: 242px;
+
+    @media (min-width: $tablet-width) {
+      left: 179px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 274px;
+    }
+  }
+}

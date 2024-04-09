@@ -1,0 +1,108 @@
+.sorting__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+}
+
+.sorting__button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary;
+  text-transform: lowercase;
+  padding: 4px 27px 4px 2px;
+
+  width: 160px;
+  background-color: transparent;
+  background: url("../../../icons/stack.svg#catalog_select-arrow") no-repeat right;
+  background-size: 10px 6px;
+  background-position-y: 15px;
+  background-position-x: 141px;
+  border: none;
+  cursor: pointer;
+
+  &--list-open {
+    background: url("../../../icons/stack.svg#catalog_select-arrow-down") no-repeat right;
+  }
+
+  &:hover,
+  &focus {
+    background-color: $secondary;
+    border-radius: 4px;
+  }
+}
+
+.sorting__list {
+  border-radius: 4px;
+  box-shadow: -2px 5px 30px 4px $grey;
+
+  position: absolute;
+  top: 32px;
+  left: 90px;
+
+  &--open {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--nojs {
+    display: block;
+  }
+}
+
+.sorting__item {
+  padding: 8px 20px;
+  background-color: $white;
+  border-bottom: 1px solid $secondary;
+
+  &--current {
+    background-color: $primary;
+
+    & .sorting__link {
+      color: $white;
+    }
+
+    &:focus .sorting__link,
+    &:hover .sorting__link {
+      color: $black;
+    }
+  }
+
+  &:active .sorting__link {
+      color: $white;
+    }
+
+  &:nth-child(1) {
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+  }
+
+  &:nth-last-child(1) {
+    border-radius: 0 0 4px 4px;
+    border-bottom: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+  }
+
+  &:active {
+    background-color: $primary;
+  }
+}
+
+.sorting__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
+}

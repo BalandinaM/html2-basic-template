@@ -1,0 +1,83 @@
+.form-filter__legend {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 3px;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.form-filter__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-filter__wrap-button {
+  @media (min-width: $tablet-width) {
+    grid-column: span 3;
+    width: 728px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    grid-row: 4/5;
+    justify-content: space-between;
+  }
+}
+
+.form-filter__button {
+  width: 280px;
+  padding: 8px 10px;
+  font-size: 16px;
+  line-height: 24px;
+  @include primary-button;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 8px 20px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    margin-top: 12px;
+  }
+
+  &--ok {
+    @media (max-width: $mobile-max-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--reset {
+    background-color: $white;
+    color: $primary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-light;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $primary-dark;
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
+
+  &--reset:disabled {
+    background-color: $grey-light;
+    color: $white;
+  }
+}

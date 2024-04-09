@@ -1,0 +1,74 @@
+//Тире между инпутами
+
+.price-controls::after {
+  content: "";
+  width: 8px;
+  height: 2px;
+  background-color: $grey;
+
+  position: absolute;
+  top: 18px;
+  left: 49%;
+
+  @media (min-width: $desktop-width) {
+    left: 70%;
+  }
+}
+
+.price-controls__input {
+  display: block;
+  box-sizing: border-box;
+  width: 118px;
+  padding: 6px 10px;
+  border: 2px solid $primary-light;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+
+  &::placeholder {
+    color: $grey;
+  }
+
+  //Убираем дефолтные кнопки
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  appearance: none;
+  -moz-appearance: textfield;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+    outline: none;
+  }
+
+  //Поведение в фокусе
+
+  &:hover,
+  &:focus {
+    border: 2px solid $primary-dark;
+  }
+
+  //Поведение disabled
+
+  &:disabled {
+    border: 2px solid $grey;
+  }
+}

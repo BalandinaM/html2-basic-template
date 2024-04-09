@@ -1,0 +1,41 @@
+.header__wrap-logo {
+  flex-grow: 1;
+  padding: 12px 20px 6px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    padding: 20px 20px 16px;
+    //padding-left: 0;
+    margin-right: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 40px 17px;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.header__title {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,93 @@
+.products__img {
+  width: 130px;
+  height: 188px;
+  display: block;
+  margin: 0 auto;
+}
+
+.products__title-link {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.products__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  align-self: left;
+  margin-top: 25px;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.products__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: left;
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.products__wrap-price-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.products__button {
+  @include primary-button;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 20px 8px 46px;
+  background-image: url("../../../icons/stack.svg#catalog_union-add");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: 20px center;
+  margin-left: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-light;
+  }
+
+  &:active {
+    background-color: $primary-dark;
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
+}
+
+.products__pagination {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width:$tablet-width) {
+    width: 395px;
+    margin-left: auto;
+    gap: 20px;
+  }
+}

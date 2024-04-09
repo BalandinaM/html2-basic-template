@@ -1,0 +1,17 @@
+.form-filter__checkbox {
+  margin-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3/4;
+  }
+
+  & .form-filter__legend {
+    @media (min-width: $tablet-width) {
+      padding-left: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
+}

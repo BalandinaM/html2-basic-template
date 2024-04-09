@@ -1,0 +1,7 @@
+@mixin primary-button {
+  text-align: center;
+  color: $white;
+  background-color: $primary;
+  border: none;
+  border-radius: 4px;
+}

@@ -1,0 +1,64 @@
+.form-filter__range-price {
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+  }
+
+  & .form-filter__legend {
+    margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.form-filter__wrap-range--disabled {
+  //Ранж не активный
+
+  & .range-controls__bar {
+    background-color: $grey;
+  }
+
+  & .range-controls__toggle {
+    border: 2px solid  $grey;
+  }
+
+  & .range-controls__toggle:hover::after,
+  & .range-controls__toggle:focus::after,
+  & .range-controls__toggle:active::after {
+    display: none;
+  }
+
+  & .price-controls__input,
+  & .price-controls__input:hover,
+  & .price-controls__input:focus,
+  & .price-controls__input:active {
+    border: 2px solid $grey;
+  }
+}
+
+.form-filter__range-controls {
+  margin-bottom: 36px;
+  margin-top: 30px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.form-filter__price-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 50px;
+  }
+}
