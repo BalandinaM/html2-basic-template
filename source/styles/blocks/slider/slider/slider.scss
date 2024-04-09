@@ -7,6 +7,8 @@
 
 .slider__list {
   @media (min-width: $tablet-width) {
+    margin-left: 0px;
+    margin-right: 0px;
     padding-bottom: 197px;
     background-color: $white;
   }
@@ -24,7 +26,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 270px;
+
   }
 
   @media (min-width: $desktop-width) {
