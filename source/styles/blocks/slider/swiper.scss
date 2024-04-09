@@ -13,19 +13,19 @@
 .swiper-button-next,
 .swiper-button-prev {
   width: 20px;
-  height: 656px;
+  height: 100%;
   top: 23px;
   color: $primary;
 
   @media (min-width: $tablet-width) {
     width: 80px;
-    height: 641px;
+    height: 76%;
     top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     width: 80px;
-    height: 712px;
+    height: 100%;
     //top: 58px;
   }
 }
