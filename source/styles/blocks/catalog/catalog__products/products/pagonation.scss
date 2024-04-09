@@ -9,6 +9,11 @@
 
   &--back .pagination__link,
   &--onward .pagination__link {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+
+
     @media (min-width: $tablet-width) {
       width: auto;
       display: block;
@@ -45,8 +50,9 @@
   justify-content: center;
   align-items: center;
 
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: auto;
+  padding: 8px 18px;
   background-color: $white;
 
   &:disabled {

@@ -84,10 +84,11 @@
 .products__pagination {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
 
   @media (min-width:$tablet-width) {
-    width: 395px;
-    margin-left: auto;
+    justify-content: flex-end;
     gap: 20px;
   }
 }
