@@ -13,9 +13,10 @@
 
 .user-nav__list {
   display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    flex-wrap: wrap;
+
     justify-content: flex-end;
     width: 25vw;
   }

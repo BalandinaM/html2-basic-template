@@ -1,5 +1,5 @@
 .header__nav {
-  position: relative;
+  //position: relative;
   order: 1;
 
   @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
 
   .header__nav--open .nav__button {
 
-    top: -60px;
+    //top: -60px;
 
     &::before,
     &::after {
