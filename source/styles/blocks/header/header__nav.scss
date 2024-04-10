@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    margin-right: 105px;
   }
 }
 
@@ -88,7 +89,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 52vw;
+    margin-right: 60px;
+    //width: 52vw;
   }
 
   @media (min-width: $desktop-width) {

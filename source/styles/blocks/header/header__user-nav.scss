@@ -18,17 +18,17 @@
   @media (min-width: $tablet-width) {
 
     justify-content: flex-end;
-    width: 25vw;
+    //width: 25vw;
   }
 
   @media (min-width: $desktop-width) {
     gap: 20px;
     padding-right: 40px;
+    margin-left: 70px;
   }
 }
 
 .user-nav__link {
-  outline: 1px solid blue;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -41,13 +41,13 @@
 
   @media (min-width: $tablet-width) {
     height: 80px;
-    justify-content: left;
+    //justify-content: left;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
     height: auto;
-    padding: 30px 25px 29px 20px;
+    padding: 32px 25px 32px 20px;
   }
 }
 
