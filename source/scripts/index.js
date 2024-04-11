@@ -106,7 +106,7 @@ if (lastPage.classList.contains('pagination__item--current')) {
 
 /*Sorting*/
 
-//const sortingButton = document.querySelector('.sorting__button');
+const sortingButton = document.querySelector('.sorting__button');
 const sortingList = document.querySelector('.sorting__list');
 //const sortingItems = Array.from(sortingList.querySelectorAll('.sorting__link'));
 // console.log(sortingItems);
@@ -117,11 +117,10 @@ if (sortingList.classList.contains('sorting__list--nojs')) {
   sortingList.classList.add('sorting__list--closed');
 }
 
-// sortingButton.addEventListener('click', () => {
-//   //console.log('+++');
-//   sortingList.classList.remove('sorting__list--closed');
-//   sortingList.classList.add('sorting__list--open');
-// });
+sortingButton.addEventListener('click', () => {
+  sortingList.classList.remove('sorting__list--closed');
+  sortingList.classList.add('sorting__list--open');
+});
 
 // for (const item of sortingItems) {
 //   item.addEventListener('click', () => {
