@@ -118,8 +118,13 @@ if (sortingList.classList.contains('sorting__list--nojs')) {
 }
 
 sortingButton.addEventListener('click', () => {
-  sortingList.classList.remove('sorting__list--closed');
-  sortingList.classList.add('sorting__list--open');
+  if (sortingList.classList.contains('sorting__list--closed')) {
+    sortingList.classList.remove('sorting__list--closed');
+    sortingList.classList.add('sorting__list--open');
+  } else {
+    sortingList.classList.remove('sorting__list--open');
+    sortingList.classList.add('sorting__list--closed');
+  }
 });
 
 // for (const item of sortingItems) {
