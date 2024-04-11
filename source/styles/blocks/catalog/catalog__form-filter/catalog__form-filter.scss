@@ -15,5 +15,9 @@
     grid-column: 1/2;
     grid-template-rows: repeat(4, min-content);
     margin: 0;
+
+    @supports (-webkit-appearance:none) {
+      padding-top: 25px;
+    }
   }
 }

@@ -45,17 +45,17 @@
   position: relative;
 
   &::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: solid 2px $grey;
-  background-color: $white;
+    content: "";
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid 2px $grey;
+    background-color: $white;
 
-  position: absolute;
-  top: -3px;
-  left: -35px;
+    position: absolute;
+    top: -3px;
+    left: -35px;
   }
 
   &::after {

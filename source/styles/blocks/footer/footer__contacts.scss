@@ -1,5 +1,4 @@
 .footer__contacts {
-
   @media (max-width: $mobile-max-width) {
     padding: 20px;
   }
@@ -38,9 +37,7 @@
   font-size: 14px;
   line-height: 20px;
 
-  & br {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (max-width: $mobile-max-width) {
+    padding-right: 5px;
   }
 }

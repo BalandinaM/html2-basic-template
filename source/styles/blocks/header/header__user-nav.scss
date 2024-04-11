@@ -1,5 +1,4 @@
 .header__user-nav {
-  //outline: 2px solid red;
   margin-right: 60px;
 
   @media (min-width: $tablet-width) {
@@ -9,7 +8,7 @@
   @media (min-width: $desktop-width) {
     gap: 20px;
     padding-right: 40px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
@@ -22,9 +21,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-
     justify-content: flex-end;
-    //width: 25vw; /*было удалено*/
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +43,6 @@
 
   @media (min-width: $tablet-width) {
     height: 80px;
-    //justify-content: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,14 +57,13 @@
   .user-nav__link:hover,
   .user-nav__link:active {
     color: $primary;
-
-    & .user-nav__svg {
-      stroke: $primary;
-    }
+    background-color: $secondary;
   }
 
-  .user-nav__link:active {
-    background-color: $secondary;
+  .user-nav__link:focus .user-nav__svg,
+  .user-nav__link:hover .user-nav__svg,
+  .user-nav__link:active .user-nav__svg {
+    stroke: $primary;
   }
 }
 
@@ -81,7 +76,7 @@
   }
 }
 
-.user-nav__link span {
+.user-nav__link-title {
   display: none;
 
   @media (min-width: $desktop-width) {

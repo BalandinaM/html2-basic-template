@@ -18,8 +18,8 @@
   padding: 4px 27px 4px 2px;
 
   width: 160px;
-  background-color: transparent;
   background: url("../../../icons/stack.svg#catalog_select-arrow") no-repeat right;
+  background-color: transparent;
   background-size: 10px 6px;
   background-position-y: 15px;
   background-position-x: 141px;
@@ -31,7 +31,7 @@
   }
 
   &:hover,
-  &focus {
+  &:focus {
     background-color: $secondary;
     border-radius: 4px;
   }
@@ -63,23 +63,6 @@
   background-color: $white;
   border-bottom: 1px solid $secondary;
 
-  &--current {
-    background-color: $primary;
-
-    & .sorting__link {
-      color: $white;
-    }
-
-    &:focus .sorting__link,
-    &:hover .sorting__link {
-      color: $black;
-    }
-  }
-
-  &:active .sorting__link {
-      color: $white;
-    }
-
   &:nth-child(1) {
     border-radius: 4px 4px 0 0;
     border-bottom: none;
@@ -98,6 +81,23 @@
   &:active {
     background-color: $primary;
   }
+}
+
+.sorting__item:active .sorting__link {
+  color: $white;
+}
+
+.sorting__item--current {
+  background-color: $primary;
+}
+
+.sorting__item--current .sorting__link {
+  color: $white;
+}
+
+.sorting__item--current:focus .sorting__link,
+.sorting__item--current:hover .sorting__link {
+  color: $black;
 }
 
 .sorting__link {

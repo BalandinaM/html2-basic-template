@@ -19,24 +19,18 @@ navToggle.addEventListener('click', () => {
 
 /* Slider */
 
-// init Swiper:
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   slidesPerView: 1,
   spaceBetween: 0,
-  //direction: 	'vertical',
   direction: 'horizontal',
-  //spaceBetween: 30,
   loop: false,
   autoHeight: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -48,42 +42,36 @@ const swiper = new Swiper('.swiper', {
 
 const map = L.map('map-canvas')
   .on('load', () => {
-    console.log('Карта загружена');
   })
-  .setView({   //координаты города
+  .setView({
     lat: 59.968029,
     lng: 30.316416,
   }, 25);
 
 
-L.tileLayer(//подключение слоя карты
+L.tileLayer(
   'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
   {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   },
-).addTo(map);//добавить на карту
+).addTo(map);
 
-// const latTokyo = 35.68950;
-// const lngTokyo = 139.69200;
-
-const mainPinIcon = L.icon({ //добавляем свой пин
-  iconUrl: '../images/map_pin.png',//адрес
-  iconSize: [38, 50],//размер
-  //iconAnchor: [20, 40],//размер хвостика
+const mainPinIcon = L.icon({
+  iconUrl: '../images/map_pin.png',
+  iconSize: [38, 50],
 });
 
-const mainPinMarker = L.marker( //задаем параметры пина
+const mainPinMarker = L.marker(
   {
-    lat: 59.968029,//координаты
+    lat: 59.968029,
     lng: 30.316416,
   },
   {
-    //draggable: true,//означает что маркер моно двигать по карте
-    icon: mainPinIcon,//подставляем свою картинку
+    icon: mainPinIcon,
   }
 );
 
-mainPinMarker.addTo(map);//добавление маркера на карту
+mainPinMarker.addTo(map);
 
 /* Pagination */
 
@@ -108,9 +96,6 @@ if (lastPage.classList.contains('pagination__item--current')) {
 
 const sortingButton = document.querySelector('.sorting__button');
 const sortingList = document.querySelector('.sorting__list');
-//const sortingItems = Array.from(sortingList.querySelectorAll('.sorting__link'));
-// console.log(sortingItems);
-
 
 if (sortingList.classList.contains('sorting__list--nojs')) {
   sortingList.classList.remove('sorting__list--nojs');
@@ -126,10 +111,3 @@ sortingButton.addEventListener('click', () => {
     sortingList.classList.add('sorting__list--closed');
   }
 });
-
-// for (const item of sortingItems) {
-//   item.addEventListener('click', () => {
-//     const text = this.textContent;
-//     console.log(text);
-//   });
-// }

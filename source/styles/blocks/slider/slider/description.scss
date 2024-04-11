@@ -55,12 +55,6 @@
     text-align: left;
     margin-bottom: 40px;
   }
-
-  & br {
-    @media (max-width: $mobile-max-width) {
-      display: none;
-    }
-  }
 }
 
 .description__wrap-price {
@@ -74,7 +68,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-}
+  }
 }
 
 .description__price--old {
@@ -96,8 +90,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  @include primary-button;
   padding: 8px 20px;
+
+  @include primary-button;
 
   &:hover,
   &:focus {

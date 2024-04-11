@@ -4,14 +4,14 @@
   @media (min-width: $desktop-width) {
     grid-row: 3/4;
   }
+}
 
-  & .form-filter__legend {
-    @media (min-width: $tablet-width) {
-      padding-left: 15px;
-    }
+.form-filter__checkbox .form-filter__legend {
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }

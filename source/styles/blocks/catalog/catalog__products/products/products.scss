@@ -87,7 +87,7 @@
   flex-wrap: wrap;
 
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     justify-content: flex-end;
     gap: 20px;
   }

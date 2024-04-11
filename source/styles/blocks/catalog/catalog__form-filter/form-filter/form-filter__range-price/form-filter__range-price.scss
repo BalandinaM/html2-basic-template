@@ -2,38 +2,13 @@
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
   }
-
-  & .form-filter__legend {
-    margin-bottom: 0;
-
-    @media (min-width: $desktop-width) {
-      margin-top: 20px;
-    }
-  }
 }
 
-.form-filter__wrap-range--disabled {
-  //Ранж не активный
+.form-filter__range-price .form-filter__legend {
+  margin-bottom: 0;
 
-  & .range-controls__bar {
-    background-color: $grey;
-  }
-
-  & .range-controls__toggle {
-    border: 2px solid  $grey;
-  }
-
-  & .range-controls__toggle:hover::after,
-  & .range-controls__toggle:focus::after,
-  & .range-controls__toggle:active::after {
-    display: none;
-  }
-
-  & .price-controls__input,
-  & .price-controls__input:hover,
-  & .price-controls__input:focus,
-  & .price-controls__input:active {
-    border: 2px solid $grey;
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
   }
 }
 
@@ -61,4 +36,27 @@
   @media (min-width: $desktop-width) {
     gap: 50px;
   }
+}
+
+//Ранж не активный
+
+.form-filter__wrap-range--disabled .range-controls__bar {
+  background-color: $grey;
+}
+
+.form-filter__wrap-range--disabled .range-controls__toggle {
+  border: 2px solid  $grey;
+}
+
+.form-filter__wrap-range--disabled .range-controls__toggle:hover::after,
+.form-filter__wrap-range--disabled .range-controls__toggle:focus::after,
+.form-filter__wrap-range--disabled .range-controls__toggle:active::after {
+  display: none;
+}
+
+.form-filter__wrap-range--disabled .price-controls__input,
+.form-filter__wrap-range--disabled .price-controls__input:hover,
+.form-filter__wrap-range--disabled .price-controls__input:focus,
+.form-filter__wrap-range--disabled .price-controls__input:active {
+  border: 2px solid $grey;
 }

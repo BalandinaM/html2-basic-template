@@ -5,15 +5,15 @@
     grid-row: 2/3;
     margin-bottom: 20px;
   }
+}
 
-  & .form-filter__legend {
-    @media (min-width: $tablet-width){
-      padding-left: 8px;
-    }
+.form-filter__radio-button .form-filter__legend {
+  @media (min-width: $tablet-width) {
+    padding-left: 8px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
-      margin-bottom: 13px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 13px;
   }
 }
