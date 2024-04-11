@@ -84,3 +84,48 @@ const mainPinMarker = L.marker( //задаем параметры пина
 );
 
 mainPinMarker.addTo(map);//добавление маркера на карту
+
+/* Pagination */
+
+const buttonBack = document.querySelector('.pagination__item--back');
+const firstPage = document.querySelector('.pagination__item--first');
+const buttonOnward = document.querySelector('.pagination__item--onward');
+const lastPage = document.querySelector('.pagination__item--last');
+
+if (firstPage.classList.contains('pagination__item--current')) {
+  buttonBack.classList.add('pagination__item--hidden');
+} else {
+  buttonBack.classList.remove('pagination__item--hidden');
+}
+
+if (lastPage.classList.contains('pagination__item--current')) {
+  buttonOnward.classList.add('pagination__item--hidden');
+} else {
+  buttonOnward.classList.remove('pagination__item--hidden');
+}
+
+/*Sorting*/
+
+const sortingButton = document.querySelector('.sorting__button');
+const sortingList = document.querySelector('.sorting__list');
+const sortingItems = Array.from(sortingList.querySelectorAll('.sorting__link'));
+console.log(sortingItems);
+
+
+if (sortingList.classList.contains('sorting__list--nojs')) {
+  sortingList.classList.remove('sorting__list--nojs');
+  sortingList.classList.add('sorting__list--closed');
+}
+
+sortingButton.addEventListener('click', () => {
+  //console.log('+++');
+  sortingList.classList.remove('sorting__list--closed');
+  sortingList.classList.add('sorting__list--open');
+});
+
+for (const item of sortingItems) {
+  item.addEventListener('click', () => {
+    const text = this.textContent;
+    console.log(text);
+  });
+}
